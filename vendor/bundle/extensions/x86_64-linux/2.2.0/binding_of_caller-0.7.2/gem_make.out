@@ -1,0 +1,12 @@
+/home/shemil/.rvm/rubies/ruby-2.2.2/bin/ruby -r ./siteconf20160727-18087-erk5gr.rb extconf.rb
+
+make "DESTDIR=" clean
+make: *** Нет правила для сборки цели `clean'.  Останов.
+
+make "DESTDIR="
+echo "Nada."
+Nada.
+
+make "DESTDIR=" install
+echo "Nada."
+Nada.
