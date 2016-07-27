@@ -1,0 +1,6 @@
+<h1><%= @know.title %></h1>
+<p><%= @know.body %></p>
+
+<%= link_to "Back", knows_path %>
+<%= link_to "Edit", edit_know_path %>
+<%= link_to "Delete", know_path(@know), method: :delete, date: {confirm: "Are yous sure?"} %>

@@ -1,0 +1,13 @@
+<div class="knows">
+  <% @knows.each do |know| %>
+  <div class="know">
+    <%= link_to (know) do %>
+    <h1><%= know.title %></h1>
+    <p><%= know.body %></p>
+    <% end %>
+  </div>
+  <% end %>
+
+
+  <p><%= link_to "New Know", new_know_path %></p>
+</div>

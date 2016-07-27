@@ -5,10 +5,19 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
-<%= yield %>
+  <div class="header">
+    <ul>
+      <li><a href="#", class="logo">Краткий</a></li>
+      <li class="nav"><a href="#">Русский язык</a></li>
+      <li class="nav"><a href="#">Математика</a></li>
+      <li class="nav"><a href="#">Физика</a></li>
+      <li class="nav"><a href="#">Биология</a></li>
+    </ul>
+  </div>
+  <%= yield %>
 
 </body>
 </html>

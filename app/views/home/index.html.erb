@@ -1,0 +1,11 @@
+<div class="knows">
+  <% @knows.each do |know| %>
+    <h1><%= know.title %></h1>
+    <p><%= know.body %></p>
+    <%= link_to "Edit", edit_know_path %>
+    <%= link_to "Delete", know_path(@know), method: :delete, date: {confirm: "Are yous sure?"} %>
+  <% end %>
+</div>
+
+
+<p><%= link_to "New Know", new_know_path %></p>
